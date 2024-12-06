@@ -1,0 +1,108 @@
+/* General Styles */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f4f8;
+    color: whitesmoke;
+    margin: 0;
+    padding: 0;
+    background-image: url('../assets/img/home.jpg');
+}
+
+header {
+    background-color: crimson;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+nav a {
+    margin: 0 10px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header h1 {
+    font-size: 1.5rem;
+}
+
+.services {
+    text-align: center;
+    padding: 1.5rem;
+}
+
+.service-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    margin-top: 1rem;
+}
+
+.service-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    background-color: #ffffff;
+    color: crimson;
+    text-decoration: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+.service-card:hover {
+    background-color: #e8f0fd;
+}
+
+.service-card img {
+    width: 50px;
+    height: 50px;
+}
+
+.service-card p {
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+
+/* Profile and Form Styling */
+
+.profile-settings,
+.service-form {
+    max-width: 400px;
+    margin: 1.5rem auto;
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #005dab;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #004494;
+}

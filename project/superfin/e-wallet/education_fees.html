@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Education Fees Payment</title>
+    <link rel="stylesheet" href="styles6.css">
+    <!-- Ensure this path is correct -->
+</head>
+
+<body>
+    <header>
+        <h1>Education Fees Payment</h1>
+        <nav style="margin-top: 1rem;">
+            <a href="index.php">E-Wallet</a>
+            <a href="educationhistory.php">History</a>
+        </nav>
+    </header>
+    <main class="education-container">
+        <form id="feesForm" action="education_fees.php" method="post">
+            <label for="studentName">Student Name</label>
+            <input type="text" id="studentName" name="studentName" placeholder="Enter Student Name" required>
+
+            <label for="studentId">Student ID</label>
+            <input type="number" id="studentId" name="studentId" placeholder="Enter Student ID" required>
+
+            <label for="institution">Select Institution</label>
+            <select id="institution" name="institution" required>
+                <option value="">Select an institution</option>
+                <option value="parulUniversity">Parul University</option>
+                <option value="GujaratTechnologicalUniversity">Gujarat Technological University</option>
+                <option value="NirmaUniversity">Nirma University</option>
+            </select>
+
+            <label for="feesAmount">Fees Amount</label>
+            <input type="number" id="feesAmount" name="feesAmount" placeholder="Enter fees amount" required min="0">
+
+            <button type="button" id="suggestFees">Suggest Fees Options</button>
+            <div id="feesSuggestions"></div>
+
+            <button type="submit">Pay Fees</button>
+        </form>
+        <div id="confirmationMessage"></div>
+    </main>
+
+    <script src="education_fees_script.js"></script>
+    <!-- Ensure this path is correct -->
+</body>
+
+</html>

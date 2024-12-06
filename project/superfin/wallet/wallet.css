@@ -1,0 +1,161 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #0f0f10;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Container for the wallet */
+.wallet-container {
+    width: 100%;
+    max-width: 600px; /* Suitable for desktop width */
+    margin: 20px;
+    padding: 20px;
+    background-color: #121212;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Header styling */
+.wallet-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.back-button {
+    text-decoration: none;
+    color: #fff;
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+.wallet-header h1 {
+    font-size: 24px;
+    flex-grow: 1;
+    text-align: center;
+}
+
+/* Balance section styling */
+.balance-section {
+    background-color: crimson;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px 0;
+    text-align: center;
+}
+
+.balance-card h2 {
+    margin: 10px 0;
+    font-size: 36px;
+    color: #0f0f10;
+}
+
+.transaction-history {
+    margin-bottom: 20px;
+}
+
+/* Transaction item styling */
+.transaction-item {
+    background-color: #1f1f21;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.transaction-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.transaction-type {
+    font-weight: bold;
+}
+
+.transaction-status {
+    color: crimson;
+}
+
+.transaction-amount {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* Button styling */
+.wallet-actions {
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn {
+    padding: 15px 20px;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    flex: 1;
+    margin: 0 5px;
+    transition: background-color 0.3s ease;
+}
+
+.add-money {
+    background-color: crimson;
+    color: #0f0f10;
+}
+
+.add-money:hover {
+    background-color: #c4e59e;
+}
+
+.withdraw {
+    background-color: #3e3e40;
+    color: #fff;
+}
+
+.withdraw:hover {
+    background-color: #565656;
+}
+
+/* Media Query for Larger Screens */
+@media (min-width: 768px) {
+    .wallet-container {
+        max-width: 800px; /* Adjust container width for desktop */
+        padding: 30px;
+    }
+
+    .wallet-header h1 {
+        font-size: 28px;
+    }
+
+    .balance-section {
+        margin: 30px 0;
+    }
+
+    .transaction-item {
+        padding: 20px;
+    }
+
+    .transaction-amount {
+        font-size: 24px;
+    }
+
+    .btn {
+        padding: 20px 30px;
+        font-size: 18px;
+    }
+}

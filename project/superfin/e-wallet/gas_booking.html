@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gas Cylinder Booking</title>
+    <link rel="stylesheet" href="styles5.css">
+    <script src="gas_script.js"></script>
+    <!-- Ensure this path is correct -->
+</head>
+
+<body>
+    <header>
+        <h1>Gas Cylinder Booking</h1>
+        <nav style="margin-top: 1rem;">
+            <a href="index.php">E-Wallet</a>
+            <a href="gashistory.php">History</a>
+        </nav>
+    </header>
+    <main class="gas-container">
+        <form id="gasForm" action="gas_booking.php" method="post">
+            <label for="customerId">Customer ID</label>
+            <input type="number" id="customerId" name="customerId" placeholder="Enter Customer ID" maxlength="17" required>
+
+            <label for="gasProvider">Select Gas Provider</label>
+            <select id="gasProvider" name="gasProvider" required>
+                <option value="#">Select a provider</option>
+                <option value="Indane">Indane Gas</option>
+                <option value="Bharat">Bharat Gas</option>
+                <option value="Reliance">Reliance Gas</option>
+            </select>
+
+            <label for="bookingAmount ">Booking Amount</label>
+            <input type="number" id="bookingAmount" name="bookingAmount" placeholder="Enter booking amount" min="0" required>
+
+            <button type="button" id="suggestBookings">Suggest Booking Options</button>
+            <div id="bookingSuggestions" style="display: none;"></div>
+
+            <button type="submit">Book Now</button>
+        </form>
+        <div id="confirmationMessage"></div>
+    </main>
+
+
+</body>
+
+</html>

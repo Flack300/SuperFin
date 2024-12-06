@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Broadband Bill Payment</title>
+    <link rel="stylesheet" href="styles7.css"> <!-- Ensure this path is correct -->
+</head>
+
+<body>
+    <header>
+        <h1>Broadband Bill Payment</h1>
+        <nav style="margin-top: 1rem;">
+            <a href="index.php">E-Wallet</a>
+            <a href="broadbandhistory.php">History</a>
+        </nav>
+    </header>
+    <main class="broadband-container">
+        <form id="broadbandForm" action="broadband.php" method="post">
+            <label for="accountNumber">Account Number</label>
+            <input type="number" id="accountNumber" name="accountNumber" placeholder="Enter Account Number" required>
+
+            <label for="serviceProvider">Select Service Provider</label>
+            <select id="serviceProvider" name="serviceProvider" required>
+                <option value="">Select a service provider</option>
+                <option value="JioFiber">Jio Fiber</option>
+                <option value="AirtelFiber">Airtel Fiber</option>
+                <option value="GtplFiber">Gtpl Fiber</option>
+            </select>
+
+            <label for="billAmount">Bill Amount</label>
+            <input type="number" id="billAmount" name="billAmount" placeholder="Enter bill amount" required min="0">
+
+            <button type="button" id="suggestPlans">Suggest Plans</button>
+            <div id="planSuggestions" style="display: none;"></div>
+
+            <button type="submit">Pay Bill</button>
+        </form>
+        <div id="confirmationMessage"></div>
+    </main>
+
+    <script src="broadband_script.js"></script> <!-- Ensure the script is linked correctly -->
+</body>
+
+</html>

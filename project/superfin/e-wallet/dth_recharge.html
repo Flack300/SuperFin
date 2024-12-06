@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DTH Recharge</title>
+    <link rel="stylesheet" href="styles4.css">
+</head>
+<body>
+    <header>
+        <h1>DTH Recharge</h1>
+        <nav style="margin-top: 1rem;">
+            <a href="index.php">E-Wallet</a>
+            <a href="dth_history.php">History</a>
+        </nav>
+    </header>
+    <main class="recharge-container">
+        <form id="dthForm" action="dth.php" method="post">
+            <label for="dthNumber">DTH Number</label>
+            <input type="text" id="dthNumber" name="dthNumber" placeholder="Enter DTH number" maxlength="10" required>
+            
+            <label for="dthOperator">Select Operator</label>
+            <select id="dthOperator" name="operator" required>
+                <option value="">Select an operator</option>
+                <option value="AIRTEL">Airtel DTH</option>
+                <option value="DISH">Dish TV</option>
+                <option value="TATA">Tata Sky</option>
+            </select>
+
+            <label for="dthAmount">Recharge Amount</label>
+            <input type="number" id="dthAmount" name="amount" placeholder="Enter amount" required min="0">
+
+            <button type="button" id="suggestDthPlans">Suggest Plans</button>
+            <div id="dthPlanSuggestions" style="display: none;"></div>
+
+            <button type="submit">Recharge Now</button>
+        </form>
+        <div id="dthConfirmationMessage"></div>
+    </main>
+
+    <script src="dthscript.js"></script>
+</body>
+</html>

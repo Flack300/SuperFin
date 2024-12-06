@@ -1,0 +1,140 @@
+/* General Styles */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e0f7fa;
+    /* Light background for better contrast */
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: crimson;
+    /* Dark header for contrast */
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+nav a {
+    margin: 0 10px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+/* Education Fees Styles */
+
+.education-container {
+    max-width: 400px;
+    margin: 2rem auto;
+    /* Center the container */
+    background-color: #ffffff;
+    /* White background for the form */
+    padding: 2rem;
+    /* Inner padding */
+    border-radius: 10px;
+    /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    /* Soft shadow effect */
+}
+
+
+/* Form Styles */
+
+form label {
+    display: block;
+    /* Stack labels */
+    margin-top: 1rem;
+    /* Spacing */
+    font-weight: bold;
+    /* Bold text */
+    color: crimson;
+    /* Color for labels */
+}
+
+input[type="text"],
+input[type="number"],
+select {
+    width: 100%;
+    /* Full width inputs */
+    padding: 0.5rem;
+    /* Inner spacing */
+    margin-top: 0.5rem;
+    /* Spacing above inputs */
+    border-radius: 5px;
+    /* Rounded corners for inputs */
+    border: 1px solid #ccc;
+    /* Border for inputs */
+    box-sizing: border-box;
+    /* Include padding and border in total width */
+    font-size: 1rem;
+    /* Font size */
+}
+
+button {
+    display: block;
+    /* Full width button */
+    width: 100%;
+    /* Button width */
+    padding: 0.75rem;
+    /* Button padding */
+    margin-top: 1rem;
+    /* Margin above button */
+    border: none;
+    /* No border */
+    border-radius: 5px;
+    /* Rounded corners for button */
+    font-weight: bold;
+    /* Bold text */
+    color: white;
+    /* Button text color */
+    cursor: pointer;
+    /* Pointer cursor */
+    background-color: crimson;
+    /* Button background color */
+    transition: background-color 0.3s ease;
+    /* Smooth background transition */
+}
+
+button:hover {
+    background-color: #008c9e;
+    /* Darker on hover */
+}
+
+#feesSuggestions {
+    margin-top: 1rem;
+    /* Margin for suggestions */
+    display: none;
+    /* Hidden by default */
+}
+
+#feesSuggestions div {
+    background-color: #f0f4c3;
+    /* Light background for suggestions */
+    padding: 0.5rem;
+    /* Padding inside suggestion boxes */
+    margin-bottom: 0.5rem;
+    /* Space between suggestions */
+    border-radius: 5px;
+    /* Rounded corners */
+    color: #2e7d32;
+    /* Text color */
+    font-size: 0.9rem;
+    /* Smaller font for suggestions */
+}
+
+
+/* Confirmation Message */
+
+#confirmationMessage {
+    margin-top: 1rem;
+    /* Margin for confirmation */
+    font-size: 1.1rem;
+    /* Font size */
+    color: #2e7d32;
+    /* Confirmation text color */
+    display: none;
+    /* Hidden by default */
+}

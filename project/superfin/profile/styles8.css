@@ -1,0 +1,130 @@
+/* General Styles */
+
+body {
+    font-family: Arial, sans-serif;
+    /* Body font */
+    background-color: #f4f4f4;
+    /* Light grey background */
+    margin: 0;
+    /* Remove default margin */
+}
+
+
+/* Header Styles */
+
+header {
+    background-color: crimson;
+    /* Facebook-like blue color */
+    color: white;
+    /* White text color */
+    padding: 1rem;
+    /* Padding around the header */
+    text-align: center;
+    /* Center-align text */
+    border-radius: 10px 10px 0 0;
+    /* Rounded top corners */
+}
+
+nav a {
+    margin: 0 10px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header h1 {
+    margin: 0;
+    /* Remove default margin */
+    font-size: 1.8rem;
+    /* Font size for header */
+    font-family: 'Arial', sans-serif;
+    /* Font family */
+}
+
+
+/* Profile Page Styles */
+
+.profile-container {
+    max-width: 400px;
+    margin: 2rem auto;
+    /* Center the container */
+    background-color: #ffffff;
+    /* White background for the form */
+    padding: 2rem;
+    /* Inner padding */
+    border-radius: 10px;
+    /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    /* Soft shadow effect */
+}
+
+.profile-container label {
+    display: block;
+    /* Stack labels */
+    margin-top: 1rem;
+    /* Spacing */
+    font-weight: bold;
+    /* Bold text */
+    color: crimson;
+    /* Color for labels */
+}
+
+.profile-container input[type="text"],
+.profile-container input[type="email"],
+.profile-container textarea {
+    width: 100%;
+    /* Full width inputs */
+    padding: 0.5rem;
+    /* Inner spacing */
+    margin-top: 0.5rem;
+    /* Spacing above inputs */
+    border-radius: 5px;
+    /* Rounded corners for inputs */
+    border: 1px solid #ccc;
+    /* Border for inputs */
+    box-sizing: border-box;
+    /* Include padding and border in total width */
+    font-size: 1rem;
+    /* Font size */
+}
+
+.profile-container button {
+    display: block;
+    /* Full width button */
+    width: 100%;
+    /* Button width */
+    padding: 0.75rem;
+    /* Button padding */
+    margin-top: 1rem;
+    /* Margin above button */
+    border: none;
+    /* No border */
+    border-radius: 5px;
+    /* Rounded corners for button */
+    font-weight: bold;
+    /* Bold text */
+    color: white;
+    /* Button text color */
+    cursor: pointer;
+    /* Pointer cursor */
+    background-color: crimson;
+    /* Button background color */
+    transition: background-color 0.3s ease;
+    /* Smooth background transition */
+}
+
+.profile-container button:hover {
+    background-color: rgb(186, 58, 83);
+    /* Darker on hover */
+}
+
+#successMessage {
+    margin-top: 1rem;
+    /* Margin for success message */
+    font-size: 1.1rem;
+    /* Font size */
+    color: #33691e;
+    /* Success text color */
+    display: none;
+    /* Hidden by default */
+}

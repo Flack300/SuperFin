@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electricity Bill Payment</title>
+    <link rel="stylesheet" href="styles3.css">
+</head>
+
+<body>
+    <header>
+        <h1>Electricity Bill Payment</h1>
+        <nav style="margin-top: 1rem;">
+            <a href="index.php">E-Wallet</a>
+            <a href="electricityhistory.php">History</a>
+        </nav>
+    </header>
+    <main class="bill-container">
+        <form id="billForm" action="electricity.php" method="post">
+            <label for="consumerNumber">Consumer Number</label>
+            <input type="text" id="consumerNumber" name="consumerNumber" placeholder="Enter consumer number" maxlength="11" required>
+
+            <label for="electricityBoard">Select Electricity Board</label>
+            <select id="electricityBoard" name="electricityBoard" required>
+                <option value="">Select a board</option>
+                <option value="DGVCL">DGVCL</option>
+                <option value="MGVCL">MGVCL</option>
+                <option value="UGVCL">UGVCL</option>
+            </select>
+
+            <label for="billAmount">Bill Amount</label>
+            <input type="number" id="billAmount" name="billAmount" placeholder="Enter bill amount" required min="0">
+
+            <button type="button" id="suggestAmounts">Suggest Amounts</button>
+            <div id="amountSuggestions" style="display: none;"></div>
+
+            <button type="submit">Pay Bill</button>
+        </form>
+        <div id="confirmationMessage"></div>
+    </main>
+
+    <script src="electricityscript.js"></script>
+</body>
+
+</html>

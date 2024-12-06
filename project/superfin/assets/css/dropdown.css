@@ -1,0 +1,38 @@
+.menu-btn {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.dropdown-menu {
+    display: none;
+    /* Hide the dropdown by default */
+    position: absolute;
+    top: 100%;
+    /* Position below the icon */
+    right: 0;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-menu a {
+    display: block;
+    padding: 8px 60px 8px 10px;
+    text-decoration: none;
+    color: black;
+}
+
+.dropdown-menu a:hover {
+    background-color: crimson;
+    color: white;
+}
+
+
+/* Show the dropdown when the menu button is hovered */
+
+.menu-btn:hover .dropdown-menu {
+    display: block;
+}

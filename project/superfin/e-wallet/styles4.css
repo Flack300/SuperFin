@@ -1,0 +1,85 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e0f7fa;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: crimson;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+nav a {
+    margin: 0 10px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.recharge-container {
+    max-width: 400px;
+    margin: 2rem auto;
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+form label {
+    display: block;
+    margin-top: 1rem;
+    font-weight: bold;
+    color: crimson;
+}
+
+input[type="text"],
+input[type="number"],
+select {
+    width: 100%;
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 0.75rem;
+    margin-top: 1rem;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+    background-color: crimson;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #008c9e;
+}
+
+#dthPlanSuggestions {
+    margin-top: 1rem;
+    display: none;
+}
+
+#dthPlanSuggestions div {
+    background-color: #f1f8e9;
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+    border-radius: 5px;
+    color: #2e7d32;
+}
+
+#dthConfirmationMessage {
+    margin-top: 1rem;
+    font-size: 1.1rem;
+    color: #2e7d32;
+    display: none;
+}

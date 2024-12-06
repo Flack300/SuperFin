@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile Recharge</title>
+    <link rel="stylesheet" href="styles2.css">
+</head>
+
+<body>
+    <header>
+        <h1>Mobile Recharge</h1>
+        <nav style="margin-top: 1rem;">
+            <a href="index.php">E-Wallet</a>
+            <a href="mobilehistory.php">History</a>
+        </nav>
+    </header>
+    <main class="recharge-container">
+        <form id="rechargeForm" action="mobile.php" method="post">
+            <label for="mobileNumber">Mobile Number</label>
+            <input type="text" id="mobileNumber" name="mobileNumber" placeholder="Enter mobile number" maxlength="10" required>
+
+            <label for="operator">Select Operator</label>
+            <select id="operator" name="operator" required>
+                <option value="">Select an operator</option>
+                <option value="JIO">JIO</option>
+                <option value="VI">VI</option>
+                <option value="AIRTEL">AIRTEL</option>
+            </select>
+
+            <label for="amount">Recharge Amount</label>
+            <input type="number" id="amount" name="amount" placeholder="Enter amount" required min="0">
+
+            <button type="button" id="suggestPlans">Suggest Plans</button>
+            <div id="planSuggestions"></div>
+
+            <button type="submit">Recharge Now</button>
+        </form>
+    </main>
+
+    <script src="script2.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,97 @@
+/* Reset some default browser styles */
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    /* Light background for better contrast */
+}
+
+
+/* Header Styles */
+
+.header {
+    background-color: crimson;
+    /* Background color for header */
+    padding: 1rem;
+    /* Inner padding */
+    text-align: center;
+    /* Center text */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* Soft shadow */
+}
+
+nav a {
+    margin: 0 10px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.header h1 {
+    margin: 0;
+    /* Remove default margin */
+    color: white;
+    /* Text color for header */
+}
+
+
+/* History Page Styles */
+
+.history-container {
+    max-width: 800px;
+    /* Maximum width for the container */
+    margin: 2rem auto;
+    /* Center the container */
+    padding: 2rem;
+    /* Inner padding */
+    background-color: #ffffff;
+    /* White background for the container */
+    border-radius: 10px;
+    /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    /* Soft shadow effect */
+}
+
+table {
+    width: 100%;
+    /* Full width table */
+    border-collapse: collapse;
+    /* Merge borders */
+}
+
+thead {
+    background-color: crimson;
+    /* Header background color */
+}
+
+th,
+td {
+    padding: 0.75rem;
+    /* Inner spacing for table cells */
+    text-align: left;
+    /* Align text to the left */
+    border-bottom: 1px solid #ddd;
+    /* Bottom border for rows */
+}
+
+th {
+    font-weight: bold;
+    /* Bold text for headers */
+}
+
+tr:hover {
+    background-color: #f1f1f1;
+    /* Light gray background on row hover */
+}
+
+.empty-state {
+    text-align: center;
+    /* Center text for empty state */
+    font-size: 1.2rem;
+    /* Larger font size for visibility */
+    color: #666;
+    /* Color for empty state message */
+    margin-top: 2rem;
+    /* Margin above message */
+}

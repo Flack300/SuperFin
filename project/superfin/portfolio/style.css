@@ -1,0 +1,145 @@
+/* Global Styles */
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #1b1f29;
+    color: #ffffff;
+    margin: 0;
+    padding: 20px;
+}
+
+.portfolio-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #242933;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    position: relative;
+    /* Ensure relative positioning for translateY */
+    transition: opacity 600ms ease, transform 600ms ease;
+    /* Smooth transition */
+}
+
+
+/* Headings */
+
+h1 {
+    text-align: center;
+    color: #4CAF50;
+    /* Green color */
+}
+
+h2 {
+    color: #f0f0f0;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+
+/* Portfolio Stats */
+
+.portfolio-stats {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.stat-item {
+    background-color: #2d3240;
+    padding: 15px;
+    border-radius: 10px;
+    width: 30%;
+    text-align: center;
+    color: #ddd;
+}
+
+.stat-value {
+    display: block;
+    font-size: 24px;
+    color: #ffffff;
+    margin-top: 5px;
+}
+
+.loss-inr {
+    color: #ff3860;
+    /* Red for losses */
+}
+
+.profit {
+    color: #00d1b2;
+    /* Green for profits */
+}
+
+
+
+/* Buttons */
+
+.orders-btn,
+.wallet-btn {
+    background-color: crimson;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.orders-btn:hover,
+.wallet-btn:hover {
+    background-color: #ff7700;
+}
+
+
+/* Cryptos List */
+
+.crypto-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.crypto-item {
+    background-color: #2d3240;
+    padding: 15px;
+    border-radius: 10px;
+    flex: 1 1 calc(33.33% - 30px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.crypto-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+}
+
+.crypto-stats {
+    font-size: 16px;
+    color: #bbbbbb;
+}
+
+
+/* Wallet Section */
+
+.wallet {
+    margin-top: 20px;
+    text-align: right;
+}
+
+.wallet-balance {
+    font-size: 22px;
+    margin-right: 10px;
+}
+
+
+/* Quantity Styles */
+
+.quantity {
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 5px;
+}
